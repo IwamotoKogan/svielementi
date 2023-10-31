@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Card UI Design</title>
+    <link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet" href="index_stilizacija/dezeni.css">
+    <link rel="stylesheet" href="index_stilizacija/korpa.css">
+    <link rel="stylesheet" href="index_stilizacija/galerija.css">
+    <link rel="stylesheet" href="osnova.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./header/header.css">
+
+    <!-- Vendor Script -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--*********POČETAK HEADERA***********-->
+    <div class="wrapper">
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <img src="./header/dipologoblack.svg" height="40" width="90" alt="Dipo d.o.o.">
+            </div>
+            <ul class="list-unstyled components ">
+    
+                <li>
+                    <a id="sidenavCollapse"
+                        class=" btn text-secondary btn-link btn-block text-left text-decoration-none px-4"
+                        href="https://dipo-shop.p2p.rs/kategorije1/">Proizvodi</a>
+                </li>
+    
+                <li>
+                    <a id="sidenavCollapse"
+                        class=" btn text-secondary btn-link btn-block text-left text-decoration-none px-4"
+                        href="https://www.dipo.rs/enterijer">Enterijer</a>
+                </li>
+    
+                <li>
+                    <a id="sidenavCollapse"
+                        class=" btn text-secondary btn-link btn-block text-left text-decoration-none px-4"
+                        href="https://www.dipo.rs/eksterijer">Eksterijer</a>
+                </li>
+    
+                <li>
+                    <a id="sidenavCollapse"
+                        class=" btn text-secondary btn-link btn-block text-left text-decoration-none px-4"
+                        href="https://www.dipo.rs/dekor">Dekor</a>
+                </li>
+    
+                <li>
+                    <a id="sidenavCollapse"
+                        class=" btn text-secondary btn-link btn-block text-left text-decoration-none px-4"
+                        href="https://www.dipo.rs/sanitarne-kabine">Sanitarne kabine</a>
+                </li>
+    
+                <li>
+                    <a id="sidenavCollapse"
+                        class=" btn text-secondary btn-link btn-block text-left text-decoration-none px-4"
+                        href="https://www.dipo.rs/usluge">Usluge</a>
+                </li>
+    
+                <li>
+                    <a id="sidenavCollapse"
+                        class=" btn text-secondary btn-link btn-block text-left text-decoration-none px-4"
+                        href="https://www.dipo.rs/kako-do-nas">Kako do nas</a>
+                </li>
+    
+    
+            </ul>
+        </nav>
+        <main class="container-fluid m-0 p-0" id="content">
+            <nav
+                class="container-fluid navbar navbar-default navbar-expand-sm navbar-light bg-light navbar-fixed-top navbar-inverse">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn bg-transparent">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+    
+                    <a class="navbar-brand d-none d-block d-md-none" href="/">
+                        <img src="./header/dipologoblack.svg" height="40" width="90" alt="Dipo d.o.o.">
+                    </a>
+                    <div class="container-lg d-flex justify-content-between align-items-center">
+    
+                        <a class="navbar-brand d-none d-md-block " href="/">
+                            <img src="./header/dipologoblack.svg" height="40" width="90" alt="Dipo d.o.o.">
+                        </a>
+                        <ul class="navbar-nav mx-auto navbar-expand-lg">
+    
+                            <li class="nav-item">
+                                <a href="https://dipo-shop.p2p.rs/kategorije1/" class="
+                                        my-nav--link 
+                                        btn btn-light 
+                                        nav-link text-nowrap lead">
+                                    Proizvodi
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="https://www.dipo.rs/enterijer" class="
+                                        my-nav--link 
+                                        btn btn-light 
+                                        nav-link text-nowrap
+                                        ">
+                                    Enterijer
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="https://www.dipo.rs/eksterijer" class="
+                                        my-nav--link 
+                                        btn btn-light 
+                                        nav-link text-nowrap
+                                        ">
+                                    Eksterijer
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="https://www.dipo.rs/dekor" class="
+                                        my-nav--link 
+                                        btn btn-light 
+                                        nav-link text-nowrap
+                                        ">
+                                    Dekor
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="https://www.dipo.rs/sanitarne-kabine" class="
+                                        my-nav--link 
+                                        btn btn-light 
+                                        nav-link text-nowrap
+                                        ">
+                                    Sanitarne kabine
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="https://www.dipo.rs/usluge" class="
+                                        my-nav--link 
+                                        btn btn-light 
+                                        nav-link text-nowrap
+                                        ">
+                                    Usluge
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="https://www.dipo.rs/kako-do-nas" class="
+                                        my-nav--link 
+                                        btn btn-light 
+                                        nav-link text-nowrap
+                                         ">
+                                    Kako do nas
+                                </a>
+                            </li>
+    
+                        </ul>
+                        <div class="ml-2 d-none d-md-block"><img src="./header/funderlogo.svg" height="24" width="120"
+                                alt="Fundermax"></div>
+    
+                    </div>
+                </div>
+            </nav>
+           
+            <div class="container">
+                <div class="imgBx">
+                    <img src="korpus2.avif" alt="">
+            
+                </div>
+                
+                <div class="details">
+                    <div class="content">
+            
+                        <div class="chat-container">
+                            <h2 class="header">Kalkulator cene kuhinjskog elementa</h2>
+                            <!--INPUTI-->
+                            <div class="inputflex">
+                                <div class="inputBox">
+                                    <input type="number" id="height" min="90" max="200" required>
+                                    <span>Visina (cm):</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="number" id="width" min="100" max="250" required>
+                                    <span>Širina (cm):</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="number" id="depth" min="30" max="60" required>
+                                    <span>Dubina (cm):</span>
+                                </div>
+                            </div>
+                            <!--KRAJ INPUTI-->
+                            
+                            <!--dezen korpusa-->
+                            <p class="product-colors">Dezen korpusa:
+                                <span class="black active" data-color-primary="#000" data-color-sec="#212121" data-pic="korpus2.avif"></span>
+                                <span class="red" data-color-primary="#7E021C" data-color-sec="#bd072d" data-pic="korpus3.jpg"></span>
+                                <span class="orange" data-color-primary="#CE5B39" data-color-sec="#F18557" data-pic="korpus1.jpg"></span>
+                            </p>
+                            <!--kraj dezen korpusa-->
+                            
+                            <!--PITANJAAAAAAAAAAAAAAAAAAA-->
+                        
+                            <div class="question">
+                                <p>Da li želite da vaš element ima nogice?</p>
+                                <button id="yes-button" class="answer-button">Da</button>
+                                <button id="no-button" class="answer-button">Ne</button>
+                            </div>
+                        
+                            <div class="question">
+                                <p>Da li želite da šarke budu sa leve ili desne strane?</p>
+                                <button id="left-hinges" class="answer-button">Leva str</button>
+                                <button id="right-hinges" class="answer-button">Desna str</button>
+                            </div>
+                        
+                        
+                            <!--KRAJ PITANJAAAAAAAAAAAAAAAAAAA-->
+                        
+                            <!--CENA-->
+                            <button id="calculate-btn" class="btn">Izračunaj cenu</button>
+                            <p id="price" class="result"></p>
+                            <!--KRAJ CENA-->
+                        
+                            <!--FRONT-->
+                            <h1> Preporučene dimenzije front</h1>
+                            <p id="recommended-front"></p>
+                            <!--DEZENI-->
+                            <div id="dezeni">
+                                <p id="select-text">Odaberite dezen fronta</p>
+                                <button id="choose-pattern" class="button-84">Odaberi dezen</button>
+                                <div id="pattern-popup">
+                        
+                                    <div class="pattern-grid">
+                                        <div class="search-dezena">
+                                            <p>pretrazite dezene</p>
+                                            <input type="text" id="search-pattern" placeholder="Pretraga dezena...">
+                                        </div>
+                        
+                        
+                        
+                        
+                        
+                                        <!-- Dodajte još sličica sa dezenima -->
+                                    </div>
+                                    <button id="close-popup">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </button>
+                                </div>
+                                <div id="selected-pattern">
+                                    <img src="" alt="Odabrani dezen" id="selected-image">
+                                    <p id="selected-pattern-title"></p>
+                                </div>
+                            </div>
+                            <!--DEZENI-->
+                            <!--KRAJ FRONT-->
+                            <button id="kupi-btn">Kupi</button>
+                        </div>
+                        <!--KRAJ CONTAINER-->
+                        
+                        
+                        <!--******** Dodati elementi za skladištenje podataka ********-->
+                        
+                        <!-- Ovde ostaje link za "Korpu" -->
+                        <a href="pregled_kuhinja.html" class="cart-link" id="cart-button" aria-label="Korpa">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <span id="cart-items">0</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!--*********kraj HEADERA***********-->
+
+    
+
+    <!-- Footer -->
+    <a href="pregled_kuhinja.html" class="cart-link" id="cart-button" aria-label="Korpa">
+        <i class="fas fa-shopping-cart"></i>
+    </a>
+    
+
+
+    <script>
+        // Change The Picture and Associated Element Color when Color Options Are Clicked.
+        $(".product-colors span").click(function() {
+            $(".product-colors span").removeClass("active");
+            $(this).addClass("active");
+            $(".active").css("border-color", $(this).attr("data-color-sec"))
+            $(".imgBx img").attr('src', $(this).attr("data-pic"));
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--<script src="dezeni.js"></script>-->  
+    <script src="./header/header.js"></script>
+    <script src="dezeni.js"></script>
+    
+    
+
+</body>
+
+</html>

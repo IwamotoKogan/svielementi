@@ -1,0 +1,220 @@
+body {
+    background-color: rgb(81, 74, 74);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    perspective: 1500px;
+}
+
+.footer {
+    position: relative;
+    margin-top: -150px;
+    /* negative value of footer height */
+    height: 150px;
+    clear: both;
+    padding-top: 20px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.87);
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+    display: inline-block;
+
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #ffffff;
+}
+
+#sidebar ul.components {
+    padding: 12px 0;
+}
+
+#sidebar ul p {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 8px 16px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    /*font-size: 1.1em;*/
+    display: block;
+    background-color: #fff;
+    text-align: left;
+}
+
+#sidebar ul li a:hover {
+    color: #000000;
+    background: rgba(0, 0, 0, 0.13);
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    /*font-size: 0.9em !important;*/
+    padding-left: 30px !important;
+    background: #fff;
+}
+
+/*ul.CTAs {
+     padding: 20px;
+ }
+
+ ul.CTAs a {
+     text-align: center;
+     font-size: 0.9em !important;
+     display: block;
+     border-radius: 5px;
+     margin-bottom: 5px;
+ }
+
+ a.download {
+     background: #fff;
+     color: #0055b6;
+ }*/
+
+a.article,
+a.article:hover {
+    background: #0055b6 !important;
+    color: #fff !important;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #eb0505;
+    cursor: pointer;
+}
+
+#sidebarCollapse span {
+    width: 100%;
+    height: 2px;
+    margin: 6px auto;
+    display: block;
+    background: #222121;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+
+#sidebarCollapse span.active:nth-of-type(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#sidebarCollapse span.active:nth-of-type(2) {
+    opacity: 0;
+}
+
+#sidebarCollapse span.active:nth-of-type(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+}
+
+
+#sidebarCollapse.active span {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+/*dodato*/
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#content h3 {
+    margin-top: 20px;
+    /* Dodajte željenu marginu iznad h3 elementa */
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+/* @media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        transform: rotateY(90deg);
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+} */
+
+
